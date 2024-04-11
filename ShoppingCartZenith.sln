@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartZenith", "ShoppingCartZenith\ShoppingCartZenith.csproj", "{0974E967-48AE-4B69-BBFD-B2641F274643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartZenith.tests", "ShoppingCartZenith.tests\ShoppingCartZenith.tests.csproj", "{EDB344E3-837B-4FDD-BC50-B4493319252F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0974E967-48AE-4B69-BBFD-B2641F274643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0974E967-48AE-4B69-BBFD-B2641F274643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0974E967-48AE-4B69-BBFD-B2641F274643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0974E967-48AE-4B69-BBFD-B2641F274643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB344E3-837B-4FDD-BC50-B4493319252F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB344E3-837B-4FDD-BC50-B4493319252F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB344E3-837B-4FDD-BC50-B4493319252F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB344E3-837B-4FDD-BC50-B4493319252F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCC71A35-799A-4195-9C01-4CBCADB7488E}
+	EndGlobalSection
+EndGlobal
