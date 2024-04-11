@@ -10,9 +10,9 @@ namespace ShoppingCartZenith.tests
         }
 
         [Test]
-        public void TestItemPricingWithNoSpecifiedQuantity()
+        public void TestItemPricingWithSpecifiedQuantityOf1()
         {
-            var itemPricingRule = new ItemPricingRule('A', 20);
+            var itemPricingRule = new ItemPricingRule('A', 1, 20);
             Assert.Multiple(() =>
             {
                 Assert.That(itemPricingRule.SKU, Is.EqualTo('A'));
@@ -22,7 +22,7 @@ namespace ShoppingCartZenith.tests
         }
 
         [Test]
-        public void TestItemPricingWithSpecifiedQuantity()
+        public void TestItemPricingWithSpecifiedQuantityOf3()
         {
             var itemPricingRule = new ItemPricingRule('A', 3, 50);
             Assert.Multiple(() =>
