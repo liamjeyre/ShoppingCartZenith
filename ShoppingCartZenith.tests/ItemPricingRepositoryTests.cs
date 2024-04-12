@@ -31,6 +31,7 @@ namespace ShoppingCartZenith.tests
             itemPricingRepository.AddItemPricingRule('B', 2, 20);
             itemPricingRepository.AddItemPricingRule('C', 3, 30);
             itemPricingRepository.AddItemPricingRule('D', 4, 40);
+
             Assert.Multiple(() =>
             {
                 Assert.That(itemPricingRepository.Rules[1].SKU, Is.EqualTo('B'));
