@@ -24,7 +24,7 @@ namespace ShoppingCartZenith.tests
         public void SetUp()
         {
             ItemRulesRepo = new Mock<IItemPricingRulesRepository>();
-            ItemRulesRepo.SetupGet(itemRepo => itemRepo.Rules).Returns(PricingRules);
+            ItemRulesRepo.Setup(itemRepo => itemRepo.GetItemPricingRules()).Returns(PricingRules);
             Checkout = new CheckoutScanner(ItemRulesRepo.Object);
         }
 

@@ -2,7 +2,7 @@
 {
     public class ItemPricingRepository : IItemPricingRulesRepository
     {
-        public List<ItemPricingRule> Rules { get; }
+        private List<ItemPricingRule> Rules { get; }
 
         public ItemPricingRepository() 
         { 
@@ -14,6 +14,11 @@
             var rule = new ItemPricingRule(sku, quantity, price);
 
             Rules.Add(rule);
+        }
+
+        public List<ItemPricingRule> GetItemPricingRules()
+        {
+            return Rules;
         }
     }
 }

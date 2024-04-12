@@ -18,9 +18,9 @@ namespace ShoppingCartZenith.tests
             itemPricingRepository.AddItemPricingRule('A', 1, 10);
             Assert.Multiple(() =>
             {
-                Assert.That(itemPricingRepository.Rules[0].SKU, Is.EqualTo('A'));
-                Assert.That(itemPricingRepository.Rules[0].Quantity, Is.EqualTo(1));
-                Assert.That(itemPricingRepository.Rules[0].Price, Is.EqualTo(10));
+                Assert.That(itemPricingRepository.GetItemPricingRules()[0].SKU, Is.EqualTo('A'));
+                Assert.That(itemPricingRepository.GetItemPricingRules()[0].Quantity, Is.EqualTo(1));
+                Assert.That(itemPricingRepository.GetItemPricingRules()[0].Price, Is.EqualTo(10));
             });
         }
 
@@ -34,9 +34,9 @@ namespace ShoppingCartZenith.tests
 
             Assert.Multiple(() =>
             {
-                Assert.That(itemPricingRepository.Rules[1].SKU, Is.EqualTo('B'));
-                Assert.That(itemPricingRepository.Rules[2].Quantity, Is.EqualTo(3));
-                Assert.That(itemPricingRepository.Rules[3].Price, Is.EqualTo(40));
+                Assert.That(itemPricingRepository.GetItemPricingRules()[1].SKU, Is.EqualTo('B'));
+                Assert.That(itemPricingRepository.GetItemPricingRules()[2].Quantity, Is.EqualTo(3));
+                Assert.That(itemPricingRepository.GetItemPricingRules()[3].Price, Is.EqualTo(40));
             });
         }
     }

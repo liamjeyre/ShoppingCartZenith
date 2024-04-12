@@ -30,7 +30,7 @@ namespace ShoppingCartZenith.Checkout
             foreach (var group in itemsGroups)
             {
                 // get the Pricing rules for this sku and order by quantity
-                var rules = _itemPricingRulesRepository.Rules
+                var rules = _itemPricingRulesRepository.GetItemPricingRules()
                     .Where(r => r.SKU == group.Key)
                     .OrderByDescending(r => r.Quantity);
                 
