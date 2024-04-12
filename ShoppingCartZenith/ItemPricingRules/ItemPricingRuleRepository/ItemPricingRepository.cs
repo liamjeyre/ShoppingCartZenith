@@ -2,7 +2,12 @@
 {
     public class ItemPricingRepository : IItemPricingRulesRepository
     {
-        public List<ItemPricingRule> Rules = [];
+        public List<ItemPricingRule> Rules { get; }
+
+        public ItemPricingRepository() 
+        { 
+            Rules = [];
+        }
 
         public void AddItemPricingRule(char sku, int quantity, int price)
         {
